@@ -17,13 +17,13 @@ var Sequelize = require('sequelize');
 
 // Usar BBDD SQLite:
 var sequelize = new Sequelize(DB_name, user, pwd,
-			      { dialect: protocol,
+			  { dialect: protocol,
 				protocol: protocol,
 				port: port,
 				host: host,
 				storage: storage, // solo SQLite (.env)
-				omitNull: true
-			      }
+				omitNull: true	  // solo Postgres	
+			  }
 		    );
 
 // Importar la definición de la tabla Quiz
